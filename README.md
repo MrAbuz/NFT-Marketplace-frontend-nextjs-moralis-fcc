@@ -7,23 +7,34 @@ Nextjs Nft Marketplace with Moralis - Plan:
 2. Sell Page:
     1. You can list your NFT on the marketplace
 
+The events emited from smart contracts are stored in a data structure that is on-chain, but smart contracts can't access it. But off-chain services like The Graph / Moralis do!
+We will index the events off-chain and then read from our database.
+Setup a server to listen for those events to be fired, and we will add them to a database to query.
+Isnt that centralized? 
+The Graph does it in a decentralized way. (It's a bit of a longer process to go Mainnet, but it's decentralized!)
+Moralis does it in a centralized way (Can be good if we want to do a fast MVP, or to do local development, and it also comes with a ton of features)
+Even tho Moralis adds a centralized component, the bulk of our protocol would still be decentralized. But not really the way I'd prefer to go if I have the option.
+Tho there are some protocols that are centralized that are important to the space, like Etherscan, Opensea.
+We're learning Moralis so that we're familiar with working with centralized servers in case we want to make an aplication in the future that provides a centralized service.
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+README.md that came with create next app:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
